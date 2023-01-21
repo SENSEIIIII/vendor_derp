@@ -38,6 +38,7 @@ SOONG_CONFIG_derpGlobalVars += \
     uses_oplus_camera \
     uses_nothing_camera \
     needs_camera_boottime \
+    camera_needs_client_info_lib
 
 SOONG_CONFIG_NAMESPACES += derpNvidiaVars
 SOONG_CONFIG_derpNvidiaVars += \
@@ -62,6 +63,7 @@ SOONG_CONFIG_derpQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_
 SOONG_CONFIG_derpGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_derpGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_derpGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
+SOONG_CONFIG_derpGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
